@@ -9,11 +9,12 @@ import java.sql.Statement;
 public class Main {
     
     public static void main(String[] args) throws Exception {
+ 
         
         String databaseName = "reviews";
         String instanceConnectionName = "hello-sql-186104:us-central1:movies";
         String username = "clara";
-        String password = "kittens";
+        String password = System.getenv("DB_PASSWORD");
         
         // Connect to server
     
